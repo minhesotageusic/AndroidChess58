@@ -1,29 +1,13 @@
 # README #
 
-This README would normally document whatever steps are necessary to get your application up and running.
+
 
 ### What is this repository for? ###
 
-* Quick summary
-* Version
-* [Learn Markdown](https://bitbucket.org/tutorials/markdowndemo)
+* Android version of the GitHub project Chess58: https://github.com/minhesotageusic/Chess58.
+Made in collaboration with https://www.linkedin.com/in/kaden-xu/.
+This project creates a 2D graphical tradition chess game for 2 players or player vs computer.
+Along with a gameplay recording to track all moves for post-game review.
 
-### How do I get set up? ###
-
-* Summary of set up
-* Configuration
-* Dependencies
-* Database configuration
-* How to run tests
-* Deployment instructions
-
-### Contribution guidelines ###
-
-* Writing tests
-* Code review
-* Other guidelines
-
-### Who do I talk to? ###
-
-* Repo owner or admin
-* Other community or team contact
+###Owner###
+* Minhesota Geusic, and Yunhao Xu
