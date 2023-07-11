@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Playback_play">
+
+
+    <view
+        android:id="@+id/chessboards"
+        class="com.example.chess58.ChessView"
+        layout_alignParentBottom="true"
+        layout_centerHorizontal="true"
+        layout_marginBottom="220dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <Button
+        android:id="@+id/prevMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/prevMove"
+        app:layout_constraintBottom_toBottomOf="@+id/chessboards"
+        app:layout_constraintStart_toStartOf="@+id/chessboards"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/nextMove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/nextMove"
+        app:layout_constraintBottom_toBottomOf="@+id/chessboards"
+        app:layout_constraintEnd_toEndOf="@+id/chessboards"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/playerTurnTexts"
+        android:layout_width="238dp"
+        android:layout_height="93dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Player's Turn"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="31dp" />
+
+<!--    <Button-->
+<!--        android:id="@+id/playback_play_back"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/back"-->
+<!--        tools:layout_editor_absoluteX="252dp"-->
+<!--        tools:layout_editor_absoluteY="31dp"-->
+<!--        tools:ignore="MissingConstraints" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

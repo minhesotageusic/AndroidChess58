@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#787878"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".ChessActivity">
+
+    <view
+        android:id="@+id/chessboard"
+        class="com.example.chess58.ChessView"
+        layout_alignParentBottom="true"
+        layout_centerHorizontal="true"
+        layout_marginBottom="220dp"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="86dp" />
+
+    <Button
+        android:id="@+id/confirmMoveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/resignBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="0dp"
+        android:text="Confirm Move"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/aiBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="29dp"
+        android:text="AI" />
+
+    <Button
+        android:id="@+id/undoMoveBtn"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/drawBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="0dp"
+        android:text="Undo Move"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/drawBtn"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="5dp"
+        android:text="Draw"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/resignBtn"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="5dp"
+        android:text="Resign"
+        tools:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/playerTurnText"
+        android:layout_width="238dp"
+        android:layout_height="93dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="536dp"
+        android:text="Player's Turn"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/upgradeText"
+        android:layout_width="240dp"
+        android:layout_height="130dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="96dp"
+        android:layout_marginBottom="364dp"
+        android:text="Choose an upgrade"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/recordBtn"
+        android:layout_width="124dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="275dp"
+        android:layout_marginBottom="60dp"
+        android:text="Record?"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/acceptDrawBtn"
+        android:layout_width="124dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginBottom="60dp"
+        android:text="accept"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/mainMenuBtn"
+        android:layout_width="124dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginBottom="60dp"
+        android:text="Main Menu"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/knighUpgradeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="431dp"
+        android:layout_toEndOf="@+id/bishopUpgradeBtn"
+        android:text="N"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/bishopUpgradeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="431dp"
+        android:layout_toEndOf="@+id/queenUpgradeBtn"
+        android:text="B"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/rookUpgradeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="430dp"
+        android:layout_toEndOf="@+id/knighUpgradeBtn"
+        android:text="R"
+        tools:visibility="invisible" />
+
+    <Button
+        android:id="@+id/queenUpgradeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="431dp"
+        android:text="Q"
+        tools:visibility="invisible" />
+
+
+</RelativeLayout>

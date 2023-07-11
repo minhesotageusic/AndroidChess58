@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/playback_ByDate"
+        android:title="ByDate"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/playback_ByTitle"
+        android:title="ByTitle"
+        app:showAsAction="always" />
+<!--    <item-->
+<!--        android:id="@+id/playback_back"-->
+<!--        android:icon="@drawable/back_arrow_white"-->
+<!--        android:orderInCategory="0"-->
+<!--        android:title="back"-->
+<!--        app:showAsAction="ifRoom" />-->
+    <item
+        android:id="@+id/playback_playReplay"
+        android:icon="@drawable/play_arrow_white"
+        android:title="playReplayBtn"
+        app:showAsAction="always" />
+</menu>
